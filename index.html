@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/3b249a239e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <br>
+    <form>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter a different city name">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" id="search-button" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <div class="col-4">
+                                <div class="current">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        id="currentweather-button">Current</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </form>
+    <div hidden id="spinner"></div>
+    <br>
+    <h2></h2>
+    <div class=row middle-section>
+        <div class="col-4">
+            <div class="TodayDetails">
+                <span id="day"> </span>
+                </span>
+                <span id="time">
+                </span>
+                <br>
+                <span id="sky-description">
+                    Mostly Cloudy
+                </span>
+                <br>
+                <span>
+                    Wind: <span id="wind">
+                    </span>
+
+                </span>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/Cloudy.png" alt="sun_and_cloud_image">
+        </div>
+        <div class="col-4">
+            <div class="TodayTemp">
+                <span id="celsius">°C</span>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="day-of-week">Sun</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p class="temperature">18°C</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="day-of-week">Mon</p>
+                    <i class="fas fa-cloud-rain"></i>
+                    <p class="temperature">15°C</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="day-of-week">Tues</p>
+                    <i class="fas fa-sun"></i>
+                    <p class="temperature">20°C</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="day-of-week">Wed</p>
+                    <i class="fas fa-bolt"></i>
+                    <p class="temperature">14°C</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="day-of-week">Thurs</p>
+                    <i class="fas fa-cloud-rain"></i>
+                    <p class="temperature">15°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
