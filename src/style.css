@@ -110,14 +110,15 @@ img {
 #day {
   color: #939aa9;
 }
-.coder-name {
+a {
   display: block;
   position: relative;
   top: 390px;
   right: 543px;
   color: #697182;
 }
-.coder-name:hover {
+a:hover {
   color: darkviolet;
   cursor: pointer;
+  text-decoration: none;
 }
