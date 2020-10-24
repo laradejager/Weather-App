@@ -33,7 +33,7 @@ h2 {
   padding: 0px;
 }
 .row {
-  height: 120px;
+  height: 80px;
 }
 .col {
   padding-left: 10px;
@@ -50,17 +50,19 @@ h2 {
   color: #939aa9;
 }
 .TodayTemp {
-  float: right;
+  position: relative;
+  top: 15px;
+  left: 75px;
   color: #939aa9;
   font-size: 30px;
   font-weight: 300;
 }
 
 img {
-  width: 140px;
+  width: 180px;
   position: relative;
   top: -50px;
-  left: 140px;
+  left: 110px;
 }
 .day-of-week {
   text-align: center;
@@ -107,4 +109,15 @@ img {
 }
 #day {
   color: #939aa9;
+}
+.coder-name {
+  display: block;
+  position: relative;
+  top: 390px;
+  right: 543px;
+  color: #697182;
+}
+.coder-name:hover {
+  color: yellow;
+  cursor: pointer;
 }
